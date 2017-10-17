@@ -4,3 +4,5 @@ A running stack of services on Docker Swarm can be manipulated in different ways
 
 ## Official Docker Documentation
 [Commands to manipulate a running Stack of Services on Docker Swarm](https://docs.docker.com/engine/reference/commandline/stack_services/#related-commands)
+
+File: [engine/reference/commandline/stack_services.md](https://docs.docker.com/engine/reference/commandline/stack_services/)
