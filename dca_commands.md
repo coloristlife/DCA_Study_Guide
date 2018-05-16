@@ -3,7 +3,7 @@
 ## Domain 1: Orchestration
 
 * Complete the setup of a swarm mode cluster with managers and worker nodes
-`this is how`
+  * `this is how`
 * State the differences between running a container vs running a service
 * Demonstrate steps to lock a swarm cluster
 * Extend the instructions to run individual containers into running services under swarm
