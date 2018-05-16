@@ -20,9 +20,16 @@
 * Rotate current key: `docker swarm unlock-key --rotate`
 
 **Extend the instructions to run individual containers into running services under swarm**
+* To create a new service: `docker service create --replicas 1 --name helloworld alpine ping docker.com`
+    * The `docker service create` command creates the service.
+    * The `--name` flag names the service `helloworld`.
+    * The `--replicas` flag specifies the desired state of 1 running instance.
+    * The arguments `alpine ping docker.com` define the service as an Alpine
+    Linux container that executes the command `ping docker.com`.
+* To view current services running: `docker service ls`
 
+**Interpret the output of docker inspect commands**
 
-* Interpret the output of docker inspect commands
 * Convert an application deployment into a stack file using a YAML compose file with docker stack deploy
 * Manipulate a running stack of services
 * Increase number of replicas
