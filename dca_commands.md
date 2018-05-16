@@ -3,7 +3,7 @@
 ## Domain 1: Orchestration
 
 * Complete the setup of a swarm mode cluster with managers and worker nodes
-> this thing
+  * `this thing`
 
 **State the differences between running a container vs running a service**
 
