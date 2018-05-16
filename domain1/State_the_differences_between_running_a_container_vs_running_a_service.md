@@ -17,9 +17,7 @@ The basic `docker run` command takes this form:
 
     $ docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
 
-The `docker run` command must specify an [*IMAGE*](glossary.md#image)
-to derive the container from. An image developer can define image
-defaults related to:
+The `docker run` command must specify an *IMAGE* to derive the container from. An image developer can define image defaults related to:
 
  * detached or foreground running
  * container identification
@@ -159,6 +157,3 @@ The diagram below shows a three-service replica in yellow and a global service
 in gray.
 
 ![global vs replicated services](../images/replicated-vs-global.png)
-
-
-

@@ -3,13 +3,25 @@
 ## Domain 1: Orchestration
 
 **Complete the setup of a swarm mode cluster with managers and worker nodes**
-  * `docker swarm init --advertise-addr <MANAGER-IP>`
-  * Verify swarm mode by: `docker info`
-  * Verify node status by: `docker node ls`
+* Run on the master: `docker swarm init --advertise-addr <MANAGER-IP>`
+* Verify swarm mode by: `docker info`
+* Verify node status by: `docker node ls`
 
-* State the differences between running a container vs running a service
-* Demonstrate steps to lock a swarm cluster
-* Extend the instructions to run individual containers into running services under swarm
+**State the differences between running a container vs running a service**
+* Running container is Docker in *single engine mode*
+* Running a service is when Docker is running in *swarm mode*
+
+**Demonstrate steps to lock a swarm cluster**
+* To initialize a swarm from rebooting master nodes: `docker swarm init --autolock`
+* To enable autolock: `docker swarm update --autolock=true`
+* To disable autolock: `docker swarm update --autolock=false`
+* To unlock a swarm: `docker swarm unlock`
+* View current key: `docker swarm unlock-key`
+* Rotate current key: `docker swarm unlock-key --rotate`
+
+**Extend the instructions to run individual containers into running services under swarm**
+
+
 * Interpret the output of docker inspect commands
 * Convert an application deployment into a stack file using a YAML compose file with docker stack deploy
 * Manipulate a running stack of services
