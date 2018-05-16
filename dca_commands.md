@@ -2,8 +2,11 @@
 
 ## Domain 1: Orchestration
 
-* Complete the setup of a swarm mode cluster with managers and worker nodes
-  * `this is how`
+**Complete the setup of a swarm mode cluster with managers and worker nodes**
+  * `docker swarm init --advertise-addr <MANAGER-IP>`
+  * Verify swarm mode by: `docker info`
+  * Verify node status by: `docker node ls`
+
 * State the differences between running a container vs running a service
 * Demonstrate steps to lock a swarm cluster
 * Extend the instructions to run individual containers into running services under swarm
