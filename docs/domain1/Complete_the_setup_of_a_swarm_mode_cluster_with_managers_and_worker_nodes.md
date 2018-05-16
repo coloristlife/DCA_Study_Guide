@@ -47,7 +47,7 @@ Windows](/engine/swarm/swarm-tutorial/index.md#use-docker-for-mac-or-docker-for-
     join as managers or workers depending on the value for the `--token`
     flag.
 
-2.  Run `docker info` to view the current state of the swarm:
+3.  Run `docker info` to view the current state of the swarm:
 
     ```bash
     $ docker info
@@ -65,7 +65,7 @@ Windows](/engine/swarm/swarm-tutorial/index.md#use-docker-for-mac-or-docker-for-
       ...snip...
     ```
 
-3.  Run the `docker node ls` command to view information about nodes:
+4.  Run the `docker node ls` command to view information about nodes:
 
     ```bash
     $ docker node ls
@@ -80,5 +80,3 @@ Windows](/engine/swarm/swarm-tutorial/index.md#use-docker-for-mac-or-docker-for-
 
     Docker Engine swarm mode automatically names the node for the machine host
     name. The tutorial covers other columns in later steps.
-
-

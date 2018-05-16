@@ -1,1 +1,0 @@
-# Describe swarm default security
