@@ -27,13 +27,44 @@
 * To view current services running: `docker service ls`
 
 **Interpret the output of docker inspect commands**
+* To get a list of services: `docker service ps`
+* To inspect a service: `docker service inspect <SERVICE-ID>`
+* Consider viewing the yaml output: `docker service inspect --pretty <SERVICE-ID>`
 
-* Convert an application deployment into a stack file using a YAML compose file with docker stack deploy
-* Manipulate a running stack of services
-* Increase number of replicas
-* Add networks publish ports
-* Mount volumes
-* Illustrate running a replicated vs global service
+**Convert an application deployment into a stack file using a YAML compose file with docker stack deploy**
+* Command usage: `docker stack deploy [OPTIONS] STACK`
+* Example: `docker stack deploy --compose-file docker-compose.yml vossibility`
+> TODO: Read more about Docker Stack
+
+**Manipulate a running stack of services**
+* To list docker stack services: `docker stack ls`
+* Available Stack commands: deploy, ls(stacks), ps(tasks), rm, services
+> TODO: Read more about Docker Stack
+
+**Increase number of replicas**
+* To update existing service: `docker service update --replicas=NUMBER SERVICE`
+* To update existing service: `docker service scale SERVICE=NUMBER`
+* To update existing service: `docker service scale SERVICE1=NUMBER SERVICE2=NUMBER`
+* To view number of replicas: `docker service ls`
+
+**Add networks publish ports**
+* Create a service: `docker service create nginx && docker service ls`
+* `docker service create --name helloworld alpine ping docker.com`
+* Update the service: `docker service update --publish-add 80 nginx`
+* To publish a service's ports externally: `docker service create --publish 8080:80 nginx`
+* Usage: `--publish <TARGET-PORT>:<SERVICE-PORT>`
+
+**Mount volumes**
+```bash
+$ docker service create \
+  --mount src=<VOLUME-NAME>,dst=<CONTAINER-PATH> \
+  --name myservice \
+  <IMAGE>
+```
+
+**Illustrate running a replicated vs global service**
+
+
 * Identify the steps needed to troubleshoot a service not deploying
 * Apply node labels to demonstrate placement of tasks
 * Sketch how a Dockerized application communicates with legacy systems
