@@ -1,6 +1,6 @@
 # Docker Certified Associate Exam Prep
 The DCA exam is designed to validate that skillset with real world questions designed by experienced Docker practitioners. As the first exam in a comprehensive multi-tiered professional certification program, the DCA serves as a foundational benchmark for real world Docker skills across the container industry.
-
+![DCA Image](image_dca.jpg)
 
 ## My Notes
 
