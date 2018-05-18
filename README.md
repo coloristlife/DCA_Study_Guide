@@ -6,9 +6,13 @@ The DCA exam is designed to validate that skillset with real world questions des
 
 ## My Notes
 
-* [DCA Commands](dca_commands.md) is a shortened version of commands only from the DCA content.
 * [DCA Content](dca_content.md) is a referenced list taken from the official [DCA Study guide](http://tinyurl.com/y79baszg).
-
+* [Domain 1: Orchestration](notes/domain1.md)
+* [Domain 2: Image Creation, Management, and Registry](notes/domain2.md)
+* [Domain 3: Installation and Configuration](notes/domain3.md)
+* [Domain 4: Networking](notes/domain4.md)
+* [Domain 5: Security](notes/domain5.md)
+* [Domain 6: Storage and Volumes](notes/domain6.md)
 
 ## References
 
