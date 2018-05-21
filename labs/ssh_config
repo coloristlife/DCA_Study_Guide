@@ -1,0 +1,22 @@
+# SSH Config file for Docker Studies
+
+Host piDAK-0
+ Hostname 192.168.200.130
+ User mreyes
+ IdentityFile ~/.ssh/id_rsa
+
+Host piDAK-1
+ Hostname 192.168.200.131
+ User mreyes
+ IdentityFile ~/.ssh/id_rsa
+
+Host piDAK-2
+ Hostname 192.168.200.132
+ User mreyes
+ IdentityFile ~/.ssh/id_rsa
+
+Host piDAK-3
+ Hostname 192.168.200.133
+ User mreyes
+ IdentityFile ~/.ssh/id_rsa
+

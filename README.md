@@ -6,7 +6,7 @@ The DCA exam is designed to validate that skillset with real world questions des
 
 ## My Notes
 
-* [DCA Content](dca_content.md) is a referenced list taken from the official [DCA Study guide](http://tinyurl.com/y79baszg).
+* [DCA Content](DCA_Exam_Content.md) is a referenced list taken from the official [DCA Study guide](http://tinyurl.com/y79baszg).
 * [Domain 1: Orchestration](notes/domain1.md)
 * [Domain 2: Image Creation, Management, and Registry](notes/domain2.md)
 * [Domain 3: Installation and Configuration](notes/domain3.md)
