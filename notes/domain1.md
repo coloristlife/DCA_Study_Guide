@@ -63,10 +63,31 @@ $ docker service create \
 ```
 
 **Illustrate running a replicated vs global service**
+* To inspect current mode: `docker service inspect SERVICE --pretty | grep "Service Mode"`
+* A replicated service is replicated to the replicas number
+* A global service runs on all available nodes
 
+**Identify the steps needed to troubleshoot a service not deploying**
+* `docker service ls`
+* `docker service ps SERVICE`
+* `docker service insect SERVICE`
+* `docker logs CONTAINER`
+* To prevent a service from being deployed, scale the service to 0
 
-* Identify the steps needed to troubleshoot a service not deploying
-* Apply node labels to demonstrate placement of tasks
-* Sketch how a Dockerized application communicates with legacy systems
-* Paraphrase the importance of quorum in a swarm cluster
-* Demonstrate the usage of templates with docker service create
+**Apply node labels to demonstrate placement of tasks**
+* Add metadata to a swarm node using node labels
+* `docker node update --label-add foo worker1`
+* When you create a service, you can use node labels as a constraint. A constraint limits the nodes where the scheduler deploys tasks for a service
+
+**Sketch how a Dockerized application communicates with legacy systems**
+* donno...
+
+**Paraphrase the importance of quorum in a swarm cluster**
+* Always have more than two managers
+* Odd number of managers is recommended
+* To add new nodes: `docker swarm join-token (worker|manager)`
+
+**Demonstrate the usage of templates with docker service create**
+* Templated configs can be used in: --hostname, --mount, --env
+* Example: `docker service create --name hosttempl \
+            --hostname="{{.Node.Hostname}}-{{.Node.ID}}-{{.Service.Name}}" busybox top`

@@ -1,0 +1,9 @@
+windows:
+  - name: DCA Study Guide
+    root: ~/git/DCA_Study_guide
+    #layout: main-vertical
+    layout: main-vertical-flipped
+    panes:
+      - ssh piDAK-0
+      - tree
+      - vim notes/domain1.md
