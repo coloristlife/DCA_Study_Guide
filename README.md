@@ -15,6 +15,8 @@ The DCA exam is designed to validate that skillset with real world questions des
 * [Domain 6: Storage and Volumes](notes/domain6.md)
 
 ## Lab Setup
+
+![Lab Setup](labs/piDAK_lab.png)
 * [iTermocil](https://github.com/TomAnthony/itermocil) is used as a window placement holder
 * [SSH Config File](labs/ssh_config)
 ...more to come
@@ -22,7 +24,6 @@ The DCA exam is designed to validate that skillset with real world questions des
 ## References
 
 * [Official Docker Certification Site](https://success.docker.com/certification)
-
 
 ### Original Author
 
